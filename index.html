@@ -1,7 +1,3178 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<!-- saved from url=(0064)http://173.230.153.67/watch/62312773-0247-4376-990d-a5b655b644c8 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://173.230.153.67/manifest.json">
+    <link rel="shortcut icon" href="http://173.230.153.67/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./Profile Page_files/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="./Profile Page_files/slick-theme.min.css">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900);</style><style type="text/css">@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);</style><style type="text/css">/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
+.loadingUpload .ball-pulse-sync > div {
+    width: 7px !important;
+    height: 7px !important;
+}
+.videoPlayerContainer {
+    height: calc(100vh - 280px) !important;
+    width:100%;
+}
+.videoPlayerContainer > div {
+    height: 100%;
+}
+.rh5v-DefaultPlayer_component {
+    position: relative;
+    font-size: 11px;
+    background-color: #000;
+    height:100% !important;
+    width:100%;
+    }
+.loadingUpload {
+    background: transparent !important;
+    /* width: 100%; */
+    /* height: 60px; */
+}
+.followProfile {
+    height: 36px;
+    background: #1bbc9d;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 110px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.balanceTop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 25px;
+    border-radius: 2px 2px 0px 0px;
+    background: #3a444e;
+}
+.loader {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    width:100%;
+    pointer-events: none;
+    cursor: none;
+}
+.ball-pulse-sync > div:nth-child(1) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+}
+.ball-pulse-sync > div:nth-child(2) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.07s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.07s infinite ease-in-out;
+}
+.ball-pulse-sync > div:nth-child(3) {
+  -webkit-animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+}
+.ball-pulse-sync > div {
+  background-color: #1bbc9d;
+  -webkit-box-shadow: 0px 0px 14px #1bbc9d;
+  box-shadow: 0px 0px 14px #1bbc9d;
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block;
+}
+
+@-webkit-keyframes ball-pulse-sync {
+    33% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+    66% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }@keyframes ball-pulse-sync {
+    33% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+    66% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+* {
+    margin: 0; 
+    padding: 0;  
+    border: 0; 
+    outline: 0; 
+    list-style:none;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    font-family: 'Titillium Web', sans-serif;
+    /* line-height: 0.675; */
+}
+#root {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+table
+{
+    border-collapse: collapse;
+}
+input {color:#fff;}
+a {
+    cursor:pointer;
+    text-decoration: none;
+    color:inherit;
+}
+html {
+    height:100%; 
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    height:100%;
+    color:#fff;
+    background:#2e363e;
+    /* overflow:hidden; */
+}
+::-webkit-input-placeholder {
+    color: rgb(80, 90, 101);
+  }
+  ::-moz-placeholder { 
+    color: rgb(80, 90, 101);
+  }
+  :-ms-input-placeholder { 
+    color: rgb(80, 90, 101);
+  }
+  :-moz-placeholder {
+    color: rgb(80, 90, 101);
+  }
+  .mainNavigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    top:0px;
+}
+.navRight {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    height:100%;
+}
+.userInNavContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    position:relative;
+}
+.navLeft a img {
+    width: 105px;
+}
+.navLeft a {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-right: 0px;
+    padding-left: 22.5px;
+}
+.profilePicNavContainer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+}
+.navPadder {
+    background: #373f48;
+    min-height: 80px;
+    max-height: 80px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    position:relative;
+}
+.userProfileDropContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.nameContainerNav {
+    font-weight: 600;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.uploadInNav {
+    font-size: 30px;
+    margin-left: 25px;
+    height: 100%;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    background: #373f48;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 80px;
+    color: #ffffff;
+    border-left: 1px solid #3f4852;
+}
+.userNotificationContainer {
+    font-size: 22px;
+    margin-right: 25px;
+}
+.navLeft {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    height:100%;
+}
+
+.navCenter ul a:not(:first-child) {
+    margin-left: 25px;
+}
+
+
+.navCenter ul a {
+    font-weight: 600;
+    font-size: 16px;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    /* border-bottom: 2px solid transparent;
+    padding-top:2px; */
+}
+.navCenter ul a.active {
+    /* border-bottom: 2px solid #1bbc9d; */
+    /* purple color: #8870ff; */
+    color:#1bbc9d;
+    /* font-weight:bold; */
+}
+.navCenter {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* background: #373f48; */
+    min-height: 80px;
+    max-height: 80px;
+    /* color: #47525f; */
+    -ms-flex-align: center;
+    align-items: center;
+    /* border-bottom: 1px solid #454f5a; */
+    position: relative;
+    width:100%;
+}
+
+.searchInput input {
+    height: 45px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #293038;
+    font-weight: 600;
+    min-width: 400px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.searchInput {
+    margin-left: 25px;
+    position:relative;
+}
+.searchInput i {
+    position: absolute;
+    right: 25px;
+    top: 11px;
+    font-size: 25px;
+    color: #505a65;
+}
+.navCenter ul {
+    position: absolute;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.individualthumb {
+    /* max-width: 300px; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* margin-right: 25px; */
+    /* padding: 25px; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    margin-left: -0.5px;
+}
+.individualthumb img {
+    border-radius: 2px 2px 0px 0px;
+    height: auto;
+    width: 100%;
+}
+
+.fluttrThumbSubContainer {
+    border-radius: 2px 2px 0px 0px;
+    background: #293038;
+}
+.commonSections {
+    padding: 25px;
+}
+.commonPartialTitle h4 {
+    font-size: 20px;
+    color: #ffffff;
+}
+.commonPartialTitle {
+    margin-bottom: 25px;
+    /* margin-top: 5px; */
+    text-transform: uppercase;
+}
+.individualthumb h5 {
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 19px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+.commonPartial:not(:first-child) {
+    margin-top: 25px;
+}
+.commonPartialTitle h4 i {
+    margin-right: 5px;
+}
+.thumbnailContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    min-height: 170px;
+    background: #293038;
+    border-radius: 2px 2px 0px 0px;
+    border-bottom: 1px solid #2e363e;
+}
+.videoTime {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffffff;
+    background: #00000087;
+    padding: 2px 7px;
+    border-radius: 2px;
+}
+.thumbBottomLeftLeft img {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+.thumbBottomLeft {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.thumbBottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-top: 25px;
+    color: #535f6d;
+}
+.thumbBottomRight {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    position:relative;
+}
+.thumbBottomLeftRight h6 {
+    margin-bottom: -10px;
+    font-size: 16px;
+    position: relative;
+    top: -6px;
+}
+.thumbBottomLeftRight span {
+    font-weight: bold;
+    font-size:15px;
+}
+.channelInfoContainerThumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.thumbBottomRight span:not(:last-child) i {
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+.thumbBottomRight span:not(:first-child) {
+    margin-left: 15px;
+}
+.thumbBottomRight span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.thumbBottomLeftRight {
+    margin-left: 10px;
+}
+.thumbBottomContainer {
+    padding: 15px;
+    background: #293038;
+    border-radius: 0px 0px 2px 2px;
+}
+.thumbBottomSubContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    margin-top:25px;
+}
+.timeAgoContainer span {
+    font-weight: bold;
+    font-size: 15px;
+}
+.isVerifiedTag {
+    background: #1bbc9d;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 14px #1bbc9d;
+            box-shadow: 0px 0px 14px #1bbc9d;
+}
+.customDropThumb span:nth-child(2) {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.customDropThumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    margin-top: -2px;
+}
+.customDropThumb span {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background: #47525f;
+}
+.subscriptionSingle img {
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 2px;
+}
+
+.subscriptionSingle {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.inputContainer input:not(:first-child) {
+    margin-top: 10px;
+}
+.inputContainer input, .dualInputContainer input {
+    height: 50px;
+    padding-left: 25px;
+    padding-right:25px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #293038;
+    font-weight: 600;
+}
+.dualInputContainer input:first-child {
+    margin-right:10px;
+}
+.dualInputContainer {
+    margin-bottom:10px;
+}
+.loginFormContainer h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.checkboxContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inputContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+.loginFormContainer {
+    min-width: 350px;
+}
+.formButtonsContainer a {
+    width: 100%;
+    height: 50px;
+    background: #3a444e;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.checkboxContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.checkboxContainer a {
+    font-size: 13px;
+    font-weight: bold;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Slick Override */
+
+.slick-prev {
+    left: 0px !important;
+}
+.slick-next {
+    right: 0px !important;
+}
+.slick-list {
+    padding-left: 10px;
+}
+.slick-next, .slick-prev {
+    font-size: 27px;
+    color: #1bbc9d;
+    z-index: 1;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #293038 !important;
+    border-radius: 2px;
+    width: 40px !important;
+    height: 40px !important;
+    border:1px solid #7682903b;
+}
+.slick-prev:before, .slick-next:before {
+    content:unset !important;
+}
+.slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+    background: #1bbc9c !important;
+    color:#fff !important;
+}
+.uploadTop i {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.superNav {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.contentContainer {
+    margin-top: 80px;
+    /* overflow:auto; */
+    -ms-flex:1 1;
+        flex:1 1;
+}
+.contentContainerNoNav {
+    -ms-flex:1 1;
+        flex:1 1;
+}
+.mainContainerFlex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    height:100%;
+}
+.uploadInNav .active {
+    color: #1bbc9d;
+    border-left:0px;
+}
+.uploadInNav a {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.uploadFlex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.individualOUR:not(:first-child) {
+    margin-top: 25px;
+}
+.otherUploadRight {
+    width: 100%;
+    max-width: 350px;
+}
+.individualOUR {
+    width: 100%;
+    background: #293038;
+    border-radius: 2px;
+    padding: 25px;
+}
+.rightDescUpload {
+    margin-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.uploadFormContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+
+.actualTagListContainer a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.actualTagListContainer a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1bbc9d;
+}
+
+.actualTagListContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 10px;
+}
+.inputsContainerCol {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.uploadFormActual {
+    background: #373f48;
+    padding: 25px;
+    border-radius: 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+.activeWindow {
+    -webkit-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    -o-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+.activeWindowNoScale {
+    -webkit-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    -o-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    opacity: 1;
+}
+.hiddenWindow {
+    -webkit-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    -o-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    opacity: 0 !important;
+    -webkit-transform: scale(0.75) !important;
+        -ms-transform: scale(0.75) !important;
+            transform: scale(0.75) !important;
+    pointer-events: none;
+}
+.hiddenWindowNoScale {
+    -webkit-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    -o-transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    transition: all 200ms cubic-bezier(0.68, 0, 0.265, 1);
+    opacity: 0 !important;
+    pointer-events: none;
+}
+.saveUploadFormContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 10px;
+}
+.statusContainerVidUpload h4 {
+    text-align: left;
+}
+.saveUploadFormContainer a {
+    background: #1bbc9d;
+    padding: 7px 25px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.tagsContainer input {
+    height: 45px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #293038;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+}
+.inputsContainerCol textarea {
+    height: 125px;
+    max-height: 125px;
+    min-height: 125px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #293038;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    color:#fff;
+}
+.inputsContainerCol input {
+    height: 45px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #293038;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+}
+.actualUploadContainer {
+    width:100%;
+    background: #293038;
+    border-radius: 2px;
+    padding: 25px;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    margin-right:25px;
+    min-height:600px;
+    position:relative;
+}
+.imageUploadRight {
+    font-size: 36px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.uploadBot span a {
+    font-weight: bold;
+    color: #1bbc9d;
+}
+.uploadTop {
+    margin-top: -20px;
+}
+.uploadBot {
+    padding: 25px;
+    border: 4px dashed #2e363e;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 2px;
+}
+.rightDescUpload a {
+    margin-top: 25px;
+    background: #1bbc9d;
+    padding: 7px 25px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.rightDescUpload h4 {
+    font-size: 18px;
+}
+.uploadRuleContainer {
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #1bbc9d;
+    font-weight: 600;
+}
+.profilePicNavContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-right:15px;
+}
+.footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+.footerBottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 25px;
+    background: #293038;
+    border-top: 1px solid #2e363e;
+}
+.footerTop ul a {
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 25px;
+}
+.footerBLeft span {
+    font-weight: bold;
+}
+.footerBLeft p {
+    font-size: 12px;
+    margin-top: -5px;
+}
+.footerBRight ul a {
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 25px;
+}
+.footerTop {
+    padding: 25px;
+    background: #293038;
+}
+
+.customTrack > div:last-child {
+    top: 80px !important;
+    bottom: 163px !important;
+}
+
+.creatorIn {
+    background-image:-webkit-gradient( linear , left top, left bottom , from(#2930389c) , to(#2930389c)  ), url(https://images.unsplash.com/photo-1485742032238-7543513eeba6?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:-webkit-linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1485742032238-7543513eeba6?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:-o-linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1485742032238-7543513eeba6?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1485742032238-7543513eeba6?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+ 
+.supportIn {
+    background-image:-webkit-gradient( linear , left top, left bottom , from(#2930389c) , to(#2930389c)  ), url(https://images.unsplash.com/photo-1506919258185-6078bba55d2a?auto=format&fit=crop&w=2015&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:-webkit-linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1506919258185-6078bba55d2a?auto=format&fit=crop&w=2015&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:-o-linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1506919258185-6078bba55d2a?auto=format&fit=crop&w=2015&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1506919258185-6078bba55d2a?auto=format&fit=crop&w=2015&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+
+.guideRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.categoryThumbContainer {
+    background: #373f48;
+    padding: 25px;
+    min-height: 183px;
+    min-width:275px;
+    max-width:275px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    height:100%;
+}
+.guideRowRight {
+    margin-left: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+.guideRowLeft {
+    width: 100%;
+    max-width:275px;
+}
+.categoryThumbContainer i {
+    margin-right: 5px;
+}
+.guideThumb {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-direction: row !important;
+        flex-direction: row !important;
+}
+.guideThumb .thumbnailContainer {
+    width:100%;
+    border-right: 1px solid #2e363e;
+    border-bottom: 0px !important;
+    border-radius: 2px 0px 0px 2px !important;
+}
+
+.guideThumb .thumbBottomContainer {
+    max-width: 285px !important;
+    min-height: 183px !important;
+    border-radius: 0px 2px 2px 0px !important;
+    width: calc(100% + 70px);
+}
+.guideRow:not(:first-child) {
+    margin-top:25px;
+}
+
+.trendingThumb {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1448387473223-5c37445527e7?auto=format&fit=crop&w=2100&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1448387473223-5c37445527e7?auto=format&fit=crop&w=2100&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1448387473223-5c37445527e7?auto=format&fit=crop&w=2100&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1448387473223-5c37445527e7?auto=format&fit=crop&w=2100&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+
+.fltOrigThumb {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1502843082787-de71ad5cc73f?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1502843082787-de71ad5cc73f?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1502843082787-de71ad5cc73f?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1502843082787-de71ad5cc73f?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+
+.vlogThumb {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1484506399805-c273b8e91dce?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+
+.beautyThumb {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1373&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1373&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1373&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1373&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+.notLoggedInContainer a {
+    font-weight: 600;
+    font-size: 16px;
+}
+.dualSection {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    height: 100%;
+}
+.noNavContainer {
+    height: 100%;
+}
+.midTSL img {
+    max-width: 225px;
+    margin-bottom: 25px;
+    margin-right: 22px;
+    width:100%;
+    height:55px;
+}
+.leftSection, .rightSection {
+    width:100%;
+}
+.topSectionLeft {
+    padding: 25px;
+}
+.loginLeftSection {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+.registerLeftSection {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#2930389c), to(#2930389c) ), url(https://images.unsplash.com/photo-1499174549139-68d3f37243b4?auto=format&fit=crop&w=1951&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -webkit-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1499174549139-68d3f37243b4?auto=format&fit=crop&w=1951&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: -o-linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1499174549139-68d3f37243b4?auto=format&fit=crop&w=1951&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image: linear-gradient( #2930389c, #2930389c ), url(https://images.unsplash.com/photo-1499174549139-68d3f37243b4?auto=format&fit=crop&w=1951&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+}
+.loginContainer {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.rc-checkbox-inner {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 2px !important;
+}
+.rc-checkbox-checked .rc-checkbox-inner:after {
+    left: 6px !important;
+    top: 1.5px !important;
+    width: 3px !important;
+    height: 10px !important;
+    border-right: 3px solid rgb(255, 255, 255) !important;
+    border-bottom: 3px solid rgb(255, 255, 255) !important;
+}
+.rc-checkbox-inner:after {
+    left: 6px !important;
+    top: 1.5px !important;
+    width: 3px !important;
+    height: 10px !important;
+    border-right: 3px solid rgb(255, 255, 255) !important;
+    border-bottom: 3px solid rgb(255, 255, 255) !important;
+}
+
+.checkboxLabel {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.rc-checkbox-checked .rc-checkbox-inner {
+    border-color: #1bbc9d !important;
+    background-color: #1bbc9d !important;
+}
+
+.rc-checkbox:hover .rc-checkbox-inner, .rc-checkbox-input:focus + .rc-checkbox-inner {
+    border-color: #1bbc9d !important;
+}
+.socialSignInContainer a:last-child {
+    margin-left: 10px;
+}
+
+.socialSignInContainer {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+}
+.socialSignInContainer a i {
+    margin-right: 10px;
+}
+
+.withFacebook {
+    background: #3b5998 !important;
+}
+
+.withGoogle {
+    background: #d34836 !important;
+}
+
+.midTSL {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+
+.signUpBtn a {
+    width: 100%;
+    height: 50px;
+    background: #1bbc9d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-weight: bold;
+    padding-left:25px;
+    padding-right:25px;
+    margin-top:10px;
+    min-width:150px;
+}
+
+.lightFooter {
+    border-top:0px;
+
+}
+.userUrlAppearance {
+    background: #262d35;
+    padding: 15px;
+    border-radius: 0px 0px 2px 2px;
+    border-top: 1px solid #2e363e;
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.userUrlAppearance input {
+    width: 100%;
+    background: transparent;
+    padding: 0px;
+    color: #1bbc9d;
+    font-size: 14px;
+    margin-top: 0px !important;
+    font-weight: bold;
+}
+.userUrlAppearance span {
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.userUrlAppearance h5 {
+    margin-right:5px;
+    color: #ffffff;
+    font-size:15px;
+}
+.usernameFirstChild {
+    border-radius: 2px 2px 0px 0px !important;
+    text-align: center;
+}
+.oddMargins {
+    margin-bottom:10px !important;
+}
+
+img[src="#"], img[src=""] {
+    display: none;
+ }
+ .guideThumb .thumbnailContainer img {
+    min-height: 183px;
+}
+.commonDropdown {
+    position: absolute;
+    right: -9px;
+    width: 100%;
+    top: 70px;
+    z-index:10;
+    min-width:200px;
+}
+.videoThumbUp {
+    position: absolute;
+    right: -9px;
+    bottom: 35px;
+    z-index: 10;
+    width: 200px;
+}
+.ddLink p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.ddLink h5 {
+    font-size: 16px;
+}
+
+.dropdownLinksContainer a:last-child {
+    border-radius: 0px 0px 2px 2px;
+}
+
+.dropdownLinksContainer a:first-child {
+    border-radius: 2px 2px 0px 0px;
+}
+
+.dropdownLinksContainer a:not(:first-child) {
+    padding-top: 0px;
+}
+
+.dropdownLinksContainer a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    background: #373f48;
+    padding: 25px;
+}
+
+.commonDropdown:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-bottom: 7.5px solid #3a444e;
+    clear: both;
+    display: block;
+    right: 5px;
+}
+
+.videoThumbUp:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-top: 7.5px solid #373f48;
+    clear: both;
+    display: block;
+    right: 5px;
+}
+.profilePageImageContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+}
+.dropdownLinksContainer a.active, .dropdownLinksContainer a.active p {
+    color: #1bbc9d !important;
+}
+.socialsContainerProfile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 23px;
+    color: #ffffff;
+    line-height: 23px;
+}
+.profilePageSubContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profileBanner {
+    background-image:-webkit-gradient( linear , left top, left bottom , from(#2930389c) , to(#2930389c)  ), url(https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:-webkit-linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:-o-linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-image:linear-gradient( #2930389c , #2930389c  ), url(https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: end;
+        align-items: flex-end;
+}
+.socialAndFollowContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.profilePageProfileInfoContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-left: 15px;
+}
+.profilePageContainer {
+    padding: 25px;
+}
+.profileLeft {
+    max-width: 250px;
+}
+.profileBlockContainer {
+    padding: 25px;
+    background: #293038;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    border-radius: 2px;
+}
+.formatableBio {
+    font-size: 14px;
+    margin-top: 12px;
+    max-width: 500px;
+    font-weight: 600;
+    color:#ffffff;
+    margin-right:25px;
+}
+.profilePageImageContainer {
+    margin-bottom: 0px;
+    display: -ms-flexbox;
+    display: flex;
+}
+.profileRight {
+    width: 100%;
+    margin-left: 0px;
+}
+.vipBtn {
+    background: #1bbc9d !important;
+}
+.commonProfileBtn {
+    height: 36px;
+    background: #404a54;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 110px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.profileSubCount {
+    background: #2e363e;
+    padding: 25px;
+    border-radius: 2px 2px 0px 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #373f48;
+}
+.compactProfile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.ppICLeft {
+    margin-right: 15px;
+}
+.ppICContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    width: 100%;
+    -ms-flex-align:center;
+        align-items:center;
+}
+.ppICLeft > h4 {
+    font-size: 18px;
+}
+.ppICLeft p {
+    font-weight: bold;
+    color: #47525f;
+    font-size:15px;
+}
+
+.expandDiscContainer {
+    margin-top: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.expandDiscContainer a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.videoDescriptionContainer {
+    padding: 25px;
+    background: #293038;
+    font-size: 15px;
+    border-radius: 0px 0px 2px 2px;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+        flex-direction:column;
+}
+.vidLeft {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    overflow: hidden;
+}
+.vidRightTop .profileSubCount{
+    background:#293038;
+}
+.vidRight {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 25px;
+    max-width: 450px;
+}
+.vidRightTop .profilePageImageContainer img {
+    width:45px;
+    height:45px;
+}
+.vidRight .socialAndFollowContainer {
+    -ms-flex-align: center !important;
+        align-items: center !important;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+}
+
+
+.singleVideoPartialTitle {
+    margin-bottom: 15px;
+}
+/* .videoPlayerContainer {
+    height: 600px;
+} */
+.singleVideoPartialTitle h4 {
+    font-size: 18px;
+}
+.videoRecommendedContainer {
+    margin-top: 25px;
+}
+.vidInfoContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width:100%;
+}
+.publishedInfoContainer p img {
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.publishedInfoContainer p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.publishedInfoContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.publishedInfoContainer p:last-child {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.vidTitleContainer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.vidTitleContainer h4 {
+    font-size: 22px;
+    line-height: 23px;
+}
+
+
+.videoOptionsContainer a:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.videoOptionsContainer a i {
+    margin-right: 5px;
+}
+
+.videoOptionsContainer a {
+    font-weight: bold;
+}
+
+.videoOptionsContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+}
+
+.videoBtnsContainer a {
+    height: 24px;
+    background: #1bbc9d;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 85px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-right: 15px;
+}
+.viewCountContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 20px;
+}
+.flexViewAmts > p {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 23px;
+    margin-bottom: 10px;
+    text-align:right;
+}
+
+.videoPageContainer {
+    padding:25px;
+}
+.vidPageSub {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.commentImage img {
+    width: 42px;
+    height: 42px;
+    border-radius: 2px;
+}
+.actualComment {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.commentRight {
+    margin-left: 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.commentTop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    line-height: 13px;
+    margin-bottom: 5px;
+}
+.commentTop span {
+    font-size: 13px;
+    margin-left: 5px;
+    color: #535f6d;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+.actualCommentTextContainer span {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.actualComment {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    background: #293038;
+    border-radius: 2px;
+    padding: 25px;
+}
+.commentBottomContainer a:not(:last-child) {
+    margin-right: 10px;
+}
+.commentBottomContainer a {
+    font-weight: bold;
+}
+.commentBottomContainer a i {
+    margin-right: 5px;
+}
+.inputContainerComment img {
+    height: 45px;
+    width: 45px;
+    border-radius: 2px;
+    margin-right: 25px;
+}
+.inputContainerComment {
+    padding: 25px;
+    background: #373f48;
+    border-radius: 2px 2px 0px 0px;
+    position: Relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.inputContainerComment i {
+    position: absolute;
+    right: 45px;
+    top: 35px;
+    font-size: 25px;
+    color: #505c6a;
+}
+.inputContainerComment input {
+    height: 45px;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #293038;
+    font-weight: 600;
+    /* min-width: 400px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+}
+.commentBottomContainer {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.actualComment:last-child {
+    border-radius:0px 0px 2px 2px;
+}
+
+.vidCommentsContainer {
+    margin-top: 25px;
+}
+.profileContentContainer {
+    width: 100%;
+}
+.profileNavContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-bottom: 1px solid #373f48;
+    padding-bottom: 25px;
+    background: #2e363e;
+    padding-top: 25px;
+}
+.profileNavContainer a {
+    font-weight: 600;
+    font-size: 16px;
+}
+.profileNavContainer a:not(:first-child) {
+    margin-left: 25px;
+}
+.actualCommentTextContainer img {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+.balanceTop span {
+    margin-left: 5px;
+    font-weight: bold;
+    /* color: white; */
+}
+.balanceBottom a:last-child {
+    border-left: 1px solid #2fd0b1;
+}
+.userSubUsers > div.active img {
+    width: 100%;
+    border-radius: 2px;
+}
+.balanceBottom a {
+    background: unset;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: 12px;
+    padding: 10px !important;
+    text-transform: uppercase;
+}
+.balanceBottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #1bbc9d;
+}
+.dropdownLinksContainer > a:nth-child(2) {
+    padding-top: 25px;
+}
+.commonModalFormContainer {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #293038d9;
+    padding: 25px;
+    z-index:10;
+}
+.firstMonthFree a {
+    width: 100%;
+    height: 50px;
+    /* background: #3a444e; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 1px solid #485461;
+    margin-bottom:15px;
+    font-size: 14px;
+}
+.firstMonthFree a span {
+    color: #1bbc9d;
+    margin-left: 3.5px;
+    text-transform: uppercase;
+}
+
+.creatorFormBody {
+    padding: 25px;
+    padding-top: 0px;
+}
+.creatorSubscriptionPlans > div.active {
+    background: #404b56;
+    color: #1bbc9d;
+}
+.creatorSubscriptionPlans > div h5 {
+    color: #1bbc9d;
+}
+.creatorSubscriptionPlans > div p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.creatorSubscriptionPlans > div:nth-child(2) {
+    border-left: 0px;
+    border-right: 0px;
+}
+.creatorSubscriptionPlans > div:last-child {
+    border-radius: 0px 2px 2px 0px;
+}
+.creatorSubscriptionPlans > div:first-child {
+    border-radius: 2px 0px 0px 2px;
+}
+.creatorSubscriptionPlans > div {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #485461;
+}
+.creatorSubscriptionPlans {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+.creatorTopModal h4 {
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.creatorTopModal p {
+    font-size: 12px;
+}
+.creatorTopModal i {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+.creatorTopModal {
+    padding: 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative;
+}
+.commonModalForm {
+    width: 100%;
+    max-width: 350px;
+    background: #3a444e;
+    border-radius: 2px;
+    /* padding: 25px; */
+}
+.gemConversion h4 {
+    font-size: 12px;
+}
+.gemDropTrigger {
+    height: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    border-radius: 2px;
+    background: #323b44;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    color: #1bbc9d;
+}
+.totalCostGemUsd {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    line-height: 12px;
+}
+.giveGemModal {
+    max-width:400px !important;
+}
+.totalCostGemSendCreator {
+    font-weight: bold;
+    color: #1bbc9d;
+    font-size: 14px;
+    line-height: 12px;
+}
+.dropBalance {
+    /* color: #1bbc9d !important; */
+    font-size: 14px;
+}
+.dualContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.dualContainer a:not(:last-child) {
+    margin-right: 15px;
+}
+.userSubUsers > div.active {
+    color: #1bbc9d !important;
+    border: 1px solid #1bbc9d;
+}
+.userSubAmount h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.userSubUsers > div:not(:last-child) {
+    margin-right: 15px;
+}
+.userSubUsers > div {
+    font-size: 30px;
+    background: #3a444e;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid #485461;
+    color: #485461;
+}
+.userSubUsers {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.creatorCost {
+    background:transparent !important;
+}
+
+.totalCostGem h4 {
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+.totalCostGem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 25px;
+    padding-top: 0px;
+    background: #404b56;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding-bottom: 10px;
+}
+.gemDrop span:hover {
+    background: #38424c;
+}
+.gemDrop span:last-child {
+    border-radius: 0px 0px 2px 2px;
+}
+.gemDrop span {
+    background: #323b44;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 600;
+    border-top: 1px solid #404b56;
+    cursor:pointer;
+}
+.gemDrop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+.buyGemsDrop {
+    position: relative;
+}
+.redeemGem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.balanceTopRedeem {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position:Relative;
+}
+.redeemFormTop {
+    position: relative;
+    border-bottom: 1px solid #46515d;
+}
+.balanceTopRedeem i {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.balanceTopRedeem h5 {
+    color: #1bbc9d;
+    font-weight: bold;
+}
+.balanceTopRedeem h5 span {
+    margin-left:0px;
+    color:unset;
+}
+.withdrawInputContainer input {
+    height: 50px;
+    padding-left: 25px;
+    padding-right: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #323b44;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.paymentMethodBlocks span.active {
+    background: #404b56;
+    color: #1bbc9d;
+    border-bottom: 1px solid #46515d;
+    padding-top: 1px;
+}
+.emailInputWithdraw input {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+.inputIconFloats span:first-child {
+    position: absolute;
+    left: 25px;
+    font-weight: bold;
+    color: #1bbc9d;
+    font-size: 15px;
+}
+.submitFormContainerGem {
+    padding: 25px;
+    padding-top: 0px;
+    background: #404b56;
+}
+.giveGemBottomCtr {
+    background:transparent;
+    padding: 25px;
+    padding-top: 0px;
+}
+.creatorFormBot {
+    padding: 25px;
+    padding-top: 0px;
+    /* background: #404b56; */
+}
+.inputIconFloats span:last-child {
+    position: absolute;
+    right: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #1bbc9d;
+}
+.inputIconFloats {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    position: relative;
+}
+.withdrawInputContainer h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.giveGemBottomCtr a {
+    width: 100%;
+    height: 50px;
+    background: #1bbc9d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.submitFormContainerGem a {
+    width: 100%;
+    height: 50px;
+    background: #1bbc9d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.creatorFormBot a {
+    width: 100%;
+    height: 50px;
+    background: #1bbc9d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.withdrawInputContainer {
+    padding:25px;
+    background: #404b56;
+}
+.withdrawInputContainer:nth-child(2) {
+    padding-bottom:0px !important;
+}
+.paymentMethodBlocks span:nth-child(2) {
+    border-left: 1px solid #404b56;
+    border-right: 1px solid #404b56;
+}
+.paymentMethodBlocks span:hover {
+    background: #404b56;
+    color: #1bbc9d;
+    border-bottom: 1px solid #46515d;
+    padding-top: 1px;
+}
+.paymentMethodBlocks span:nth-child(2):hover {
+    border-left: 1px solid #46515d;
+    border-right: 1px solid #46515d;
+}
+.paymentMethodBlocks span {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    height: 75px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #3a444e;
+    color: #ffffff;
+    cursor:pointer;
+}
+.giveGemAmtsContainer {
+    padding: 25px;
+    padding-top: 0px;
+}
+.paymentMethodBlocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 100%;
+}
+.gGACRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+.gGACRow:first-child span:last-child {
+    border-radius: 0px 2px 0px 0px;
+}
+.gGACRow:first-child span:first-child {
+    border-radius: 2px 0px 0px 0px;
+}
+.gGACRow:last-child span:last-child {
+    border-radius: 0px 0px 2px 0px;
+}
+.gGACRow:last-child span:first-child {
+    border-radius: 0px 0px 0px 2px;
+}
+.gGACRow:last-child span {
+    border-bottom: 1px solid #485461;
+}
+.gGACRow span:last-child {
+    border-right: 1px solid #485461;
+}
+.gGACRow span {
+    width: 100%;
+    height: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    border-left: 1px solid #485461;
+    border-top: 1px solid #485461;
+    color: #ffffff;
+    font-size: 12px;
+}
+.gGACRow span.active {
+background: #404b56;
+color: #1bbc9d;
+}
+.addMessageGiveGem {
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.giveGemAmtsContainer h4, .addMessageGiveGem h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    /* padding-left:25px; */
+    margin-bottom:10px;
+}
+.addMessageGiveGem input {
+    height: 50px;
+    padding-left: 25px;
+    padding-right: 40px;
+    font-size: 16px;
+    border-radius: 2px;
+    background: #323b44;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.gemRemainingContainer {
+    padding: 25px;
+    padding-top: 0px;
+}
+.gemRemainI {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.gemRemainingContainer h4 {
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+.gemBarContainer {
+    height: 4px;
+    background: #323b44;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.gemBarContainer span {
+    display: -ms-flexbox;
+    display: flex;
+    background: #1bbc9d;
+    width: 80%;
+    height: 100%;
+    /* background: linear-gradient(to right, #1bbaa0 0%, #1baebc 52%, #1bbcb5 100%); */
+}
+
+.gemLeaderboardTop > div > div:nth-child(2) h4 {
+    font-size: 14px;
+}
+.gemLeaderboardTop > div > div:nth-child(2) p {
+    color: #1bbc9d;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.gemLeaderboardTop > div > div:nth-child(2) {
+    text-align: center;
+    margin-top: 15px;
+}
+.gemLeaderboardTopTitle {
+    background: #373f48;
+    padding: 25px;
+    border-radius: 2px 2px 0px 0px;
+}
+.gemLeaderboardTop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: end;
+        align-items: flex-end;
+}
+.topGemImg span {
+    background: #1bbc9d;
+    width: 24px;
+    height: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-weight: bold;
+    line-height: 0px;
+    border-radius: 2px;
+    margin-top: -10px;
+}
+.topGemImg {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.topGemImg img {
+    width: 40px;
+    border-radius: 2px;
+}
+.gemLeaderboardTop > div:nth-child(2) > div img {
+    width: 65px;
+}
+.gemLeaderboardTopTitle > h4 {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-right: 25px;
+    text-transform: uppercase;
+}
+.gemLeaderboardTop > div:nth-child(2) > div span {
+    background: #e6b831 !important;
+}
+.gemLeaderboardTop > div:nth-child(3) > div span {
+    background: #d17325 !important;
+}
+.gemLeaderboardTop > div:nth-child(1) > div span {
+    background: #b6b4b3 !important;
+}
+.gemLeaderboardContainer {
+    margin-top: 25px;
+}
+.leaderBoardList {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.lbListImg img {
+    width: 40px;
+    border-radius: 2px;
+}
+.lbListImg {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+    position: relative;
+}
+.lbListImg span {
+    background: #626d77;
+    width: 21px;
+    height: 21px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 0px;
+    border-radius: 2px;
+    position: absolute;
+    left: 55px;
+}
+.lbListNameContainer {
+    width: 100%;
+    padding-left: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.leaderBoardList {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 25px;
+    background: #293038;
+}
+.leaderBoardList:not(:first-child) {
+    border-top:1px solid #2e363e;
+}
+.leaderBoardList:not(:last-child) {
+    border-radius:0px 0px 2px 2px;
+}
+.lbListGemContainer {
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #1bbc9d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+</style><style type="text/css">@media screen and (max-width: 1450px) {
+    .guideRow {
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    .guideRowRight {
+        margin-left:0px;
+    }
+    .guideRowLeft {
+        margin-bottom: 25px !important;
+    }
+    .guideRowLeft, .categoryThumbContainer {
+        max-width: calc(100% - 7.5px);
+        width:100%;
+        margin: 0 auto;
+    }
+    .categoryThumbContainer {
+        margin: 0 auto;
+    }
+}</style><style type="text/css">.rh5v-DefaultPlayer_component {
+    font-family: inherit !important;
+    /* background-color: #1f252b !important; */
+}
+.rh5v-Volume_icon {
+    padding: 3px !important;
+}
+.rh5v-Fullscreen_icon {
+    padding: 3px !important;
+}
+.rh5v-PlayPause_icon {
+    padding: 3px;
+}
+.rh5v-Overlay_inner {
+    border-radius: 2px !important;
+    background: #1f252b !important;
+}
+
+
+
+
+
+
+
+</style><style type="text/css">.rh5v-DefaultPlayer_component {
+    position: relative;
+    font-family: Helvetica;
+    font-size: 11px;
+    background-color: #000;
+}
+
+.rh5v-DefaultPlayer_video {
+    width: 100%;
+    height: 100%;
+}
+
+.rh5v-DefaultPlayer_controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 34px;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.rh5v-DefaultPlayer_seek {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+}
+
+.rh5v-DefaultPlayer_component:hover .rh5v-DefaultPlayer_controls {
+    opacity: 1;
+}
+.rh5v-Time_component {
+    padding: 0 10px 0 10px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.rh5v-Time_current {
+    margin-right: 5px;
+}
+
+.rh5v-Time_duration {
+    margin-left: 5px;
+    color: #919191;
+}
+.rh5v-Seek_component {
+    position: relative;
+}
+
+.rh5v-Seek_track {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    height: 4px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #3e3e3e;
+}
+
+.rh5v-Seek_buffer,
+.rh5v-Seek_fill,
+.rh5v-Seek_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.rh5v-Seek_buffer {
+    background-color: #5a5a5a;
+}
+
+.rh5v-Seek_fill {
+    background: #fff;
+}
+
+.rh5v-Seek_input {
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.rh5v-Volume_component {
+    position: relative;
+}
+
+.rh5v-Volume_component:hover {
+    background-color: #000;
+}
+
+.rh5v-Volume_button {
+    width: 34px;
+    height: 34px;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+}
+
+.rh5v-Volume_button:focus {
+    outline: 0;
+}
+
+.rh5v-Volume_icon {
+    padding: 7px;
+}
+
+.rh5v-Volume_slider {
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 100%;
+    left: 5px;
+    height: 56px;
+    background-color: #000;
+}
+
+.rh5v-Volume_component:hover .rh5v-Volume_slider {
+    display: block;
+}
+
+.rh5v-Volume_track {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 50%;
+    width: 4px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #3e3e3e;
+}
+
+.rh5v-Volume_fill,
+.rh5v-Volume_input {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.rh5v-Volume_fill {
+    background-color: #fff;
+}
+
+.rh5v-Volume_input {
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-appearance: slider-vertical;
+    cursor: pointer;
+}.rh5v-Captions_component {
+    position: relative;
+}
+
+.rh5v-Captions_component:hover {
+    background-color: #000;
+}
+
+.rh5v-Captions_button {
+    width: 34px;
+    height: 34px;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+}
+
+.rh5v-Captions_button:focus {
+    outline: 0;
+}
+
+.rh5v-Captions_icon {
+    padding: 5px;
+}
+
+.rh5v-Captions_trackList {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.rh5v-Captions_component:hover .rh5v-Captions_trackList {
+    display: block;
+}
+
+.rh5v-Captions_trackItem {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.rh5v-Captions_activeTrackItem,
+.rh5v-Captions_trackItem:hover {
+    background: #000;
+}
+
+.rh5v-Captions_activeTrackItem {
+    text-decoration: underline;
+}
+.rh5v-PlayPause_component {}
+
+.rh5v-PlayPause_component:hover {
+    background-color: #000;
+}
+
+.rh5v-PlayPause_button {
+    width: 34px;
+    height: 34px;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+}
+
+.rh5v-PlayPause_button:focus {
+    outline: 0;
+}
+
+.rh5v-PlayPause_icon {
+    padding: 5px;
+}
+.rh5v-Fullscreen_component {}
+
+.rh5v-Fullscreen_component:hover {
+    background-color: #000;
+}
+
+.rh5v-Fullscreen_button {
+    width: 34px;
+    height: 34px;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+}
+
+.rh5v-Fullscreen_button:focus {
+    outline: 0;
+}
+
+.rh5v-Fullscreen_icon {
+    padding: 5px;
+}
+.rh5v-Overlay_component {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
+
+.rh5v-Overlay_inner {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: -30px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+
+.rh5v-Overlay_icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    margin-left: -20px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+</style><style type="text/css"></style><style type="text/css">/* 一般状态 */
+.rc-checkbox {
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  vertical-align: middle;
+}
+.rc-checkbox:hover .rc-checkbox-inner,
+.rc-checkbox-input:focus + .rc-checkbox-inner {
+  border-color: #3dbcf6;
+}
+.rc-checkbox-inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #d9d9d9;
+  background-color: #ffffff;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: border-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.rc-checkbox-inner:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  display: table;
+  width: 5px;
+  height: 8px;
+  border: 2px solid #ffffff;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: amCheckboxOut;
+          animation-name: amCheckboxOut;
+}
+.rc-checkbox-input {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+/* 选中状态 */
+.rc-checkbox-checked:hover .rc-checkbox-inner {
+  border-color: #3dbcf6;
+}
+.rc-checkbox-checked .rc-checkbox-inner {
+  border-color: #3dbcf6;
+  background-color: #3dbcf6;
+}
+.rc-checkbox-checked .rc-checkbox-inner:after {
+  -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  display: table;
+  width: 5px;
+  height: 8px;
+  border: 2px solid #ffffff;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: amCheckboxOut;
+          animation-name: amCheckboxOut;
+}
+.rc-checkbox-disabled.rc-checkbox-checked:hover .rc-checkbox-inner {
+  border-color: #d9d9d9;
+}
+.rc-checkbox-disabled.rc-checkbox-checked .rc-checkbox-inner {
+  background-color: #f3f3f3;
+  border-color: #d9d9d9;
+}
+.rc-checkbox-disabled.rc-checkbox-checked .rc-checkbox-inner:after {
+  -webkit-animation-name: none;
+          animation-name: none;
+  border-color: #cccccc;
+}
+.rc-checkbox-disabled:hover .rc-checkbox-inner {
+  border-color: #d9d9d9;
+}
+.rc-checkbox-disabled .rc-checkbox-inner {
+  border-color: #d9d9d9;
+  background-color: #f3f3f3;
+}
+.rc-checkbox-disabled .rc-checkbox-inner:after {
+  -webkit-animation-name: none;
+          animation-name: none;
+  border-color: #f3f3f3;
+}
+.rc-checkbox-disabled .rc-checkbox-inner-input {
+  cursor: default;
+}
+@-webkit-keyframes amCheckboxIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0) rotate(45deg);
+            transform: scale(0, 0) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1) rotate(45deg);
+            transform: scale(1, 1) rotate(45deg);
+  }
+}
+@keyframes amCheckboxIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0) rotate(45deg);
+            transform: scale(0, 0) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1) rotate(45deg);
+            transform: scale(1, 1) rotate(45deg);
+  }
+}
+@-webkit-keyframes amCheckboxOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes amCheckboxOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style></head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="customTrack" style="position: relative; overflow: hidden; width: 100%; height: 100%;"><div style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px;"><div class="mainContainerFlex"><div class="superNav"><div class="navPadder"><div class="mainNavigation"><div class="navLeft"><a aria-current="false" href="http://173.230.153.67/"><img src="./Profile Page_files/logo.ce592ab6.svg"></a><div class="searchInput"><i class="ion ion-search"></i><input placeholder="Search videos..."></div></div><div class="navCenter"><ul><a aria-current="false" href="http://173.230.153.67/">Home</a><a aria-current="false" href="http://173.230.153.67/guide">Guide</a><a aria-current="false" href="http://173.230.153.67/guide">Community</a><a aria-current="false" href="http://173.230.153.67/guide">Blog</a></ul></div><div class="navRight"><div class="userInNavContainer"><div class="userProfileDropContainer" tabindex="1" style="cursor: pointer;"><div class="profilePicNavContainer"><img src="./Profile Page_files/36.jpg"></div><i class="ion ion-arrow-down-b"></i></div><div class="commonDropdown" style="display: none;"><div class="dropdownLinksContainer"><div class="balanceContainer"><div class="balanceTop dropBalance"><h3>456,449</h3><span>GEMS</span></div><div class="balanceBottom"><a>Buy</a><a>Redeem</a></div></div><a aria-current="false" href="http://173.230.153.67/profile"><div class="ddLink"><h5>Profile</h5><p>Check your profile</p></div></a><a><div class="ddLink"><h5>My videos</h5><p>Check video uploads</p></div></a><a><div class="ddLink"><h5>Settings</h5><p>Change account settings</p></div></a><a><div class="ddLink"><h5>Darkmode</h5><p>Enable or disable</p></div></a><a aria-current="false" href="http://173.230.153.67/signout"><div class="ddLink"><h5>Logout</h5><p>Sign out of session</p></div></a></div></div></div><div class="uploadInNav"><a aria-current="false" href="http://173.230.153.67/upload"><i class="ion ion-upload"></i></a></div></div><div class="commonModalFormContainer hiddenWindowNoScale"><div class="commonModalForm hiddenWindow"><div class="redeemFormTop"><div class="balanceTop balanceTopRedeem"><i class="ion ion-close"></i><div class="redeemGem"><h3>456,449</h3><span>GEMS</span></div><h5>≈ <span>$2,932.84 USD</span></h5></div></div><div class="redeemFormBot"><div class="paymentMethodBlocks"><span class="active"><div>PayPal</div></span><span><div>Skrill</div></span><span><div>Bank</div></span></div><div class="withdrawInputContainer"><h4>Your PayPal email</h4><div class="emailInputWithdraw"><input placeholder="Your email address"></div></div><div class="withdrawInputContainer"><h4>Enter withdrawal amount</h4><div class="inputIconFloats"><span>$</span><input placeholder="0.00"><span>USD</span></div></div><div class="submitFormContainerGem"><a>Withdraw</a></div></div></div></div><div class="commonModalFormContainer hiddenWindowNoScale"><div class="commonModalForm hiddenWindow"><div class="redeemFormTop"><div class="balanceTop balanceTopRedeem"><i class="ion ion-close"></i><div class="redeemGem"><h3>0</h3><span>GEMS</span></div><h5>≈ <span>$0.00 USD</span></h5></div></div><div class="redeemFormBot"><div class="withdrawInputContainer"><h4>How many GEMS do you want?</h4><div class="buyGemsDrop"><div class="gemDropTrigger"><span>500 GEMS</span><i class="ion ion-arrow-down-b"></i></div></div></div><div class="totalCostGem"><h4>Total Due</h4><span class="totalCostGemUsd">$5.02</span></div><div class="submitFormContainerGem"><a>Buy now</a></div></div></div></div></div></div></div><div class="contentContainer"><div class="videoPageContainer"><div class="vidPageSub"><div class="vidLeft"><div class="videoPlayerContainer"><div><div class="rh5v-DefaultPlayer_component " style="height: 424.688px;"><video class="rh5v-DefaultPlayer_video" poster=""><source src="https://fluttr-api.herokuapp.com/videos/stream/62312773-0247-4376-990d-a5b655b644c8" type="video/webm"><track label="English" kind="subtitles" srclang="en" src="http://source.vtt" default=""></video><div class="rh5v-Overlay_component "><span class="rh5v-Overlay_inner"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" class="rh5v-Overlay_icon" fill="#fff"><path d="M12.984 12.984v-6h-1.969v6h1.969zM12 17.297c.703 0 1.313-.609 1.313-1.313s-.609-1.266-1.313-1.266-1.313.563-1.313 1.266.609 1.313 1.313 1.313zM15.75 3L21 8.25v7.5L15.75 21h-7.5L3 15.75v-7.5L8.25 3h7.5z"></path></svg></span></div></div></div></div><div class="videoInfoContainer"><div class="dualContainer"><div class="vidInfoContainer"><div class="vidInfoContainerLeft"><div class="vidTitleContainer"><h4>Night Timelapse - Scottsdale, AZ</h4></div><div class="publishedInfoContainer"><p><img src="./Profile Page_files/36.jpg">via @kyle</p><p>Published on Feb 20, 2018</p></div></div><div class="viewCountContainer"><div class="flexViewAmts"><p>423,550 views</p><div class="videoOptionsContainer"><div class="videoBtnsContainer"><a>Give gems</a></div><a><i class="ion ion-android-share-alt"></i>Share</a><a><i class="ion ion-android-favorite"></i>852</a></div></div></div></div></div></div><div class="videoRecommendedContainer"><div class="commonPartialTitle singleVideoPartialTitle"><h4><i class="ion ion-android-star"></i>Recommended videos</h4></div><div class="slick-initialized slick-slider"><div class="slick-arrow slick-prev" style="display: block; background: green;"><i class="ion ion-arrow-left-b"></i></div><div class="slick-list"><div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 2076.25px;"><div class="slick-slide slick-cloned individualthumb" data-index="-3" style="/* width: 250px; */"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/hqdefault.jpg"></div><span class="videoTime">12:66</span></div><div class="thumbBottomContainer"><h5>My Gear!</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/36.jpg"></div><div class="thumbBottomLeftRight"><h6>KyleMarvin</h6><span>4.8M Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Week ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>89K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div><div class="slick-slide slick-cloned individualthumb" data-index="-2" style="/* width: 250px; */"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/hqdefault(1).jpg"></div><span class="videoTime">4:13</span></div><div class="thumbBottomContainer"><h5>FILMMAKING IS A SPORT</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/photo.jpg"></div><div class="thumbBottomLeftRight"><h6>
+CaseyNeistat
+
+</h6><span>948K Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Month ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>8K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div><div class="slick-slide slick-cloned individualthumb" data-index="-1" style="/* width: 250px; */"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/hqdefault(2).jpg"></div><span class="videoTime">13:59</span></div><div class="thumbBottomContainer"><h5>How to create a good video thumbnail for fluttr</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/photo(1).jpg"></div><div class="thumbBottomLeftRight"><h6>PeterMckinnon24</h6><span>1.7M Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Year ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>89K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div><div class="slick-slide slick-active individualthumb" data-index="0" tabindex="-1" style="outline: none; width: 188.75px;"></div><div class="slick-slide slick-active individualthumb" data-index="1" tabindex="-1" style="outline: none; width: 188.75px;"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/62312773-0247-4376-990d-a5b655b644c8"></div><span class="videoTime">13:59</span></div><div class="thumbBottomContainer"><h5>How to create a good video thumbnail for fluttr</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/36.jpg"></div><div class="thumbBottomLeftRight"><h6>LinusTechTips</h6><span>948K Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Year ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>89K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div><div class="slick-slide slick-active individualthumb" data-index="2" tabindex="-1" style="outline: none; width: 188.75px;"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/62312773-0247-4376-990d-a5b655b644c8"></div><span class="videoTime">13:59</span></div><div class="thumbBottomContainer"><h5>How to create a good video thumbnail for fluttr</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/36.jpg"></div><div class="thumbBottomLeftRight"><h6>LinusTechTips</h6><span>948K Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Year ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>89K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div><div class="slick-slide slick-cloned individualthumb" data-index="4" style="width: 188.75px;"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/62312773-0247-4376-990d-a5b655b644c8"></div><span class="videoTime">13:59</span></div><div class="thumbBottomContainer"><h5>How to create a good video thumbnail for fluttr</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/36.jpg"></div><div class="thumbBottomLeftRight"><h6>LinusTechTips</h6><span>948K Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Year ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>89K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div><div class="slick-slide slick-cloned individualthumb" data-index="5" style="width: 188.75px;"><div class="thumbnailContainer"><div class="fluttrThumbSubContainer"><img src="./Profile Page_files/62312773-0247-4376-990d-a5b655b644c8"></div><span class="videoTime">13:59</span></div><div class="thumbBottomContainer"><h5>How to create a good video thumbnail for fluttr</h5><div class="thumbBottom"><div class="thumbBottomLeft"><div class="channelInfoContainerThumb"><div class="thumbBottomLeftLeft"><img src="./Profile Page_files/36.jpg"></div><div class="thumbBottomLeftRight"><h6>LinusTechTips</h6><span>948K Followers</span></div></div><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div><div class="thumbBottomSubContainer"><div class="timeAgoContainer"><span>1 Year ago</span></div><div class="thumbBottomRight"><span><i class="ion ion-ios-eye"></i>3.9M</span><span><i class="ion ion-thumbsup"></i>89K</span><a class="customDropThumb"><span></span><span></span><span></span></a></div></div></div></div></div></div></div><div class="slick-arrow slick-next" style="display: block; background: red;"><i class="ion ion-arrow-right-b"></i></div></div></div></div><div class="vidRight"><div class="vidRightTop"><div class="profileSubCount"><div class="compactProfile"><div class="profilePageImageContainer"><img src="./Profile Page_files/36.jpg"></div><div class="profilePageProfileInfoContainer"><div class="ppICContainer"><div class="ppICLeft"><h4>Kyle Marvin</h4></div><div class="ppICRight"><div class="isVerified"><span class="isVerifiedTag"><i class="ion ion-checkmark"></i></span></div></div></div></div></div><div class="socialAndFollowContainer"><a class="followProfile">Follow 4.8M</a></div></div><div class="videoDescriptionContainer"><span>Check out my new timelapse filmed at night in Scottsdale, AZ - merch link in bio</span><div class="expandDiscContainer"><a class="expandVideoDescription">Expand</a></div></div></div><div class="vidCommentsContainer"><div class="commentsTopContainer"><div class="inputContainerComment"><img src="./Profile Page_files/36.jpg"><input placeholder="Add comment..."><i class="ion ion-android-send"></i></div></div><div class="actualCommentsContainer"><div class="actualComment"><div class="commentImage"><img src="data:image/png;base64,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"></div><div class="commentRight"><div class="commentTop"><h4>MommaLover45</h4><span>4 Minutes ago</span></div><div class="actualCommentTextContainer"><span>Woah! Sweeeeeet!</span></div><div class="commentBottomContainer"><a><i class="ion ion-android-favorite"></i>800</a><a><i class="ion ion-chatbubble-working"></i>Reply</a></div></div></div><div class="actualComment"><div class="commentImage"><img src="./Profile Page_files/blodget-surprise-mark-zuckerberg-has-become-one-of-the-best-ceos-in-the-industry.jpg"></div><div class="commentRight"><div class="commentTop"><h4>Zuck</h4><span>24 Hours ago</span></div><div class="actualCommentTextContainer"><span>FIRST! </span></div><div class="commentBottomContainer"><a><i class="ion ion-android-favorite"></i>800</a><a><i class="ion ion-chatbubble-working"></i>Reply</a></div></div></div></div></div><div class="gemLeaderboardContainer"><div class="gemLeaderboardTopTitle"><h4>Top givers</h4><div class="gemLeaderboardTop"><div><div class="topGemImg"><img src="./Profile Page_files/photo.jpg"><span>2</span></div><div><h4>CaseyNeistat</h4><p>834671 Gems</p></div></div><div><div class="topGemImg"><img src="./Profile Page_files/19938321"><span>1</span></div><div><h4>Jess1</h4><p>5937626 Gems</p></div></div><div><div class="topGemImg"><img src="./Profile Page_files/blodget-surprise-mark-zuckerberg-has-become-one-of-the-best-ceos-in-the-industry.jpg"><span>3</span></div><div><h4>Zuck</h4><p>233671 Gems</p></div></div></div></div><div class="leaderBoardListContainer"><div class="leaderBoardList"><div class="lbListImg"><img src="data:image/jpeg;base64,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"><span>4</span></div><div class="lbListNameContainer"><h5>NotLoganPaul</h5></div><div class="lbListGemContainer"><h5>156000 Gems</h5></div></div><div class="leaderBoardList"><div class="lbListImg"><img src="./Profile Page_files/41.jpg"><span>5</span></div><div class="lbListNameContainer"><h5>Rex82</h5></div><div class="lbListGemContainer"><h5>143987 Gems</h5></div></div><div class="leaderBoardList"><div class="lbListImg"><img src="./Profile Page_files/fIulVlYk.jpg"><span>6</span></div><div class="lbListNameContainer"><h5>NotJakePaul</h5></div><div class="lbListGemContainer"><h5>108876 Gems</h5></div></div><div class="leaderBoardList"><div class="lbListImg"><img src="data:image/png;base64,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"><span>7</span></div><div class="lbListNameContainer"><h5>MommaLover45</h5></div><div class="lbListGemContainer"><h5>94324 Gems</h5></div></div></div></div></div></div><div class="commonModalFormContainer hiddenWindowNoScale"><div class="commonModalForm giveGemModal hiddenWindow"><div class="creatorFormTop"><div class="creatorTopModal"><i class="ion ion-close"></i><h4>Gems</h4><p>Give Fluttr Gems to your favorite creators</p></div></div><div class="giveGemFormBot"><div class="giveGemAmtsContainer"><h4>How many gems?</h4><div class="gGACRow"><span>1</span><span>10</span><span>100</span></div><div class="gGACRow"><span>500</span><span>1000</span><span class="active">2000</span></div><div class="gGACRow"><span>3000</span><span>5000</span><span>8000</span></div><div class="gGACRow"><span>100000</span><span>ALL</span><span>OTHER</span></div></div><div class="addMessageGiveGem"><h4>Optional message</h4><input placeholder="Write a king note to @linustechtips (optional)"></div><div class="totalCostGem creatorCost"><h4>Gems to be sent</h4><span class="totalCostGemSendCreator">2000</span></div><div class="giveGemBottomCtr"><a>Send</a></div><div class="gemRemainingContainer"><div class="gemRemainI"><h4>Gems remaining</h4><span class="totalCostGemSendCreator">8000</span></div><div class="gemBarContainer"><span> </span></div></div></div></div></div></div></div><div class="footerContainer"><div class="footer"><div class="footerTop"><ul><a aria-current="false" href="http://173.230.153.67/">Home</a><a aria-current="false" href="http://173.230.153.67/guide">Guide</a></ul></div><div class="footerMid"></div><div class="footerBottom"><div class="footerBLeft"><span>fluttr.com</span><p>powered by the fluttr team</p></div><div class="footerBRight"><ul><a aria-current="false" href="http://173.230.153.67/">Terms</a><a aria-current="false" href="http://173.230.153.67/guide">Privacy</a></ul></div></div></div></div></div></div><div style="position: absolute; height: 6px; display: none; right: 2px; bottom: 2px; left: 2px; border-radius: 3px;"><div style="position: relative; display: block; height: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2);"></div></div><div style="position: absolute; width: 6px; display: none; right: 2px; bottom: 2px; top: 2px; border-radius: 3px;"><div style="position: relative; display: block; width: 20px; background-color: rgb(78, 88, 99); opacity: 0.7; border-radius: 0px;"></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="./Profile Page_files/bundle.js"></script>
+
+</body></html>
